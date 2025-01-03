@@ -1,0 +1,10 @@
+# .azure-pipelines.yml
+trigger:
+- main  # main 브랜치 변경 시 실행
+
+pool:
+  vmImage: 'ubuntu-latest'  # Microsoft-hosted 에이전트 사용
+
+steps:
+- script: echo "Hello, Azure DevOps!"  # 테스트 메시지 출력
+  displayName: "Print Hello World"
